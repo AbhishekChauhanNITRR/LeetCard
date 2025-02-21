@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(179, 144, 209);
+    color: azure;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#container{
+    width: 60%;
+    height: 80%;
+    background-color: rgb(159, 61, 195);
+    border-radius: 0.35rem;
+    padding: 1rem 2rem;
+}
+h1{
+    text-shadow: 2px 2px 2px goldenrod;
+    padding: 0.2rem 0;
+}
+#user-input{
+    margin: 0.5rem 0;
+}
+label{
+    font-size: 1.3rem;
+}
+#write{
+    margin-top: 0.5rem;
+    width: 70%;
+    margin-right: 2rem;
+    border-radius: 0.3rem;
+    height: 1.6rem;
+    padding: 0.2rem 0.5rem;
+    outline: none;
+    background-color: rgba(245, 245, 245, 0.902);
+    border: white solid 1px;
+}
+#write:focus{
+    box-shadow: 1px 1px 2px white;
+}
+button{
+    margin-top: 0.5rem;
+    height: 1.6rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.3rem;
+    outline: none;
+    font-weight: 500;
+    background-color: rgb(179, 144, 209);
+    border: solid rgb(222, 205, 238) 2px;
+}
+button:hover{
+    background-color: brown;
+    font-weight: 700;
+}
+#pi-chart{
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    font-weight: 600;
+}
+.circles{
+    height: 7rem;
+    width: 7rem;
+    padding: 5px;
+    color: black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.2rem;
+    flex-direction: column;
+}
+.circles>div{
+    position: relative;
+    z-index: 2;
+}
+#c1{
+    /* color: rgb(6, 176, 6); */
+    border: solid rgb(6, 176, 6) 3px;
+    background: conic-gradient(
+        rgb(157, 240, 157) 0deg,
+        rgb(157, 240, 157) var(--easyPercent,0%),
+         azure var(--easyPercent,0%)
+    );
+}
+#c2{
+    /* color: rgb(193, 131, 16); */
+    border: solid rgb(232, 157, 19) 3px;
+    background: conic-gradient(
+        rgb(228, 190, 121) 0deg,
+        rgb(228, 190, 121) var(--mediumPercent,0%),
+         azure var(--mediumPercent,0%)
+    );
+}
+#c3{
+    /* color: rgb(199, 31, 31); */
+    border: solid rgb(239, 25, 25) 3px;
+    background: conic-gradient(
+        rgb(230, 123, 123) 0deg,
+        rgb(230, 123, 123) var(--hardPercent,0%),
+         azure var(--hardPercent,0%)
+    );
+}
+#sub-all{
+    grid-area: sub-all;
+}
+#sub-easy{
+    grid-area: sub-easy;
+}
+#sub-med{
+    grid-area: sub-med;
+}
+#sub-hrd{
+    grid-area: sub-hrd;
+}
+#progress-bars{
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-areas: "sub-all sub-easy"
+    "sub-med sub-hrd";
+    gap: 0.4rem 0.5rem;
+    justify-items: center;
+    align-items: center;
+    color: black;
+}
+.bars{
+    display: flex;
+    padding: 0.5rem 0.5rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(179, 144, 209);
+    border-radius: 0.6rem;
+    font-weight: 600;
+    color: azure;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeetCard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <h1>LeetCard</h1>
+        <div id="user-input">
+            <label for="write">Enter your LeetCode username : <br> </label>
+            <input type="text" placeholder="Enter your username here" id="write" name="write">
+            <button id="submit-button">Submit</button>
+        </div>
+        <div id="pi-chart">
+            <div class="circles" id="c1">
+                <div>
+                    <span id="easy-done">a</span>/<span id="easy-total">b</span>
+                </div>
+                Easy
+            </div>
+            <div class="circles" id="c2">
+                <div>
+                    <span id="medium-done">a</span>/<span id="medium-total">b</span>
+                </div>
+                Medium
+            </div>
+            <div class="circles" id="c3">
+                <div>
+                    <span id="hard-done">a</span>/<span id="hard-total">b</span>
+                </div>
+                Hard
+            </div>
+        </div>
+        <div id="progress-bars">
+            <div class="bars" id="sub-all">
+                Total Solved
+                <span>0</span>
+            </div>
+            <div class="bars" id="sub-easy">
+                Contest Rating
+                <span>0</span>
+            </div>
+            <div class="bars" id="sub-med">
+                Contest Top Percentage
+                <span>0</span>
+            </div>
+            <div class="bars" id="sub-hrd">
+                Contribution Points
+                <span>0</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
